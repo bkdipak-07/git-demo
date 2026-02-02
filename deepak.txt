@@ -1,0 +1,70 @@
+<?php
+/*
+$a=array(10,20,30);
+echo $a[1];
+*/
+
+/*
+$a=array(
+"bill"=>24,
+"stive"=>30,
+"elon"=>40
+);
+echo $a["bill"];
+*/
+
+/*
+$array=[
+    "red",
+    "green",
+    "blue"
+];
+foreach($array as $value){
+echo $value."<br>";
+}*/
+
+/*
+$array=[
+    "bill"=>24,
+     "herry"=>30,
+      "poter"=>40
+];
+echo "<ul>";
+foreach($array as $key=> $value){
+    //echo $key. "=" .$value."<br>";
+    echo "<li> $key=$value </li>";
+}
+echo "</ul>";
+*/
+
+$array=[
+[1,"krishna","manager",500],
+[2,"mohan","spy",500],
+[3,"ravi","ceo",500],
+[4,"gaurav","gafadi",500],
+[5,"ram","god",500]
+];
+
+echo"<table border='2px' cellpadding='5px' cellspacing='5px'>";
+foreach($array as $v1){
+    echo "<tr>";
+    foreach($v1 as $v2){
+echo"<td>$v2</td>";
+    }
+    echo"</tr>";
+}
+echo"</table>";
+
+/*for($row=0;$row<4;$row++){
+for($col=0;$col<4;$col++){
+echo$array[$row][$col]." ";
+}
+echo"<br>";
+}
+*/
+
+/*echo"<pre>";
+print_r($array);
+echo"</pre>";
+*/
+?>
